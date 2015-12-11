@@ -1,0 +1,25 @@
+.notification {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.messages {
+  text-decoration: underline;
+  color: blue;
+  font-size: 36px;
+  font-style: italic;
+}
+
+/* THIS IS HOW YOU COMMENT .... .messages.error means you're looking for both without being nested using PARENT/CHILD*/
+.messages.error {
+  color: yellow;
+}
