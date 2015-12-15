@@ -5,3 +5,22 @@
   padding: 20px;
   margin: 10px;
 }
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 33.3333333333%;
+}
+
+footer {
+  float:left;
+  width: 100%;
+}
+
+.clearfix {
+  clear: both;
+}

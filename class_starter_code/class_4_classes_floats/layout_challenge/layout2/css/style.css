@@ -5,3 +5,29 @@
   padding: 20px;
   margin: 10px;
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+section {
+  float: left;
+  width: 70%;
+}
+
+aside {
+  width: 15%;
+}
+
+footer {
+  float: left;
+  width: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
