@@ -5,3 +5,50 @@
   padding: 20px;
   margin: 10px;
 }
+
+.placeholder:hover {
+  background: rgba(255, 0, 0, 1);
+}
+
+header {
+  float:left;
+  width: 25%;
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+
+.nav-item .placeholder {
+  height: 80px;
+  margin-top: 40px;
+}
+
+.nav-item{
+  float: left;
+  width: 25%;
+}
+
+.section-large {
+  float: left;
+  width: 100%;
+}
+
+.section-large .placeholder {
+  height: 400px;
+}
+
+.section-small {
+  float: left;
+  width: 33.33%;
+}
+
+.section-small .placeholder {
+  height: 300px;
+}
+
+footer {
+  float: left;
+  width: 100%;
+}

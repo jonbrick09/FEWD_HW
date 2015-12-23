@@ -1,0 +1,260 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: white;
+}
+
+header {
+  background-color: black;
+  margin: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: yellow;
+  border-bottom-width: thick;
+}
+
+nav {
+  text-align: right;
+  height: 52px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.developers-container {
+  max-width: 1995;
+  margin: auto;
+}
+
+.main-header {
+  padding: 10px;
+}
+
+.main-navbar {
+  padding: 15px 0px
+}
+
+.developers-header {
+  padding: 0px 20px 0px 20px;
+}
+
+.main-yellow-logo {
+  color: yellow;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.developers-yellow-logo {
+    color: yellow;
+    font-size: 30px;
+    padding: 5px;
+    float: left;
+}
+
+.developers-nav {
+  float: right;
+  padding-top: 12px;
+  height: 52px;
+}
+
+li {
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  display: inline;
+  height: 52px;
+}
+
+.primary-nav {
+  text-transform: uppercase;
+}
+
+.primary-nav:hover {
+  background-color: gray;
+}
+
+.secondary-nav:hover {
+  background-color: gray;
+}
+
+.wrapper-section {
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+.main-section {
+  background-image: url("../images/coworking.jpg");
+  width: 100%;
+  float: left;
+  height: 460px;
+  padding: 20px;
+  background-position: center;
+}
+
+.developers-main-section {
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.match-section {
+  padding: 30px;
+  float: right;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  box-shadow: 0px 0px 10px;
+}
+
+.match-section-button {
+  background-color: yellow;
+  box-shadow: 0 2px #cccc00;
+}
+
+.developers-profile {
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+  float: left;
+  margin: 10px 10px;
+}
+
+.developers-profile-pic {
+  background-color: lightgray;
+  color: darkgray;
+  height: 280px;
+  width: 280px;
+  padding: 120px 0px;
+  font-size: 24px;
+}
+
+.developers-profile-p {
+  text-align: left;
+}
+
+.developers-profile-circle {
+  background-color: dimgray;
+  border-radius: 10px;
+  float: left;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  margin: 5px;
+}
+
+.three-columns {
+  float: left;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+}
+
+.three-columns-section {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+.three-columns-button {
+  background-color: lightgray;
+  box-shadow: 0 2px darkgray;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
