@@ -33,25 +33,81 @@ Developer @GA in NYC
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  /*padding: 0 0 10px 10px; /* note the padding around a right floated image */*/
 }
 
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  /*padding: 0 10px 10px 0; /* note the padding around a left floated image */*/
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+html {
+  background-color: lightgray;
 }
 
+body {
+   color: #000;
+   background-color: white;
+   font-size: 12px;
+   line-height: 1.4;
+   font-family: 'Open Sans', Arial, sans-serif;
+}
+
+header {
+  background-color: #1a334c;
+  padding: 30px 70px 30px 70px;
+}
+
+section {
+  background-color: #f2f2f2;
+  padding: 30px 70px 30px 70px;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  padding: 0px 0px 30px 0px;
+  text-align: center;
+}
+
+nav {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  color: #1a334c;
+}
+
+h2 {
+  font-size: 30px;
+  color: #1a334c;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a334c;
+}
+
+button {
+  border-radius: 2px;
+  border: none;
+}
+
+p {
+  font-size: 14px;
+}
 
 /******************************************
 /* LAYOUT
@@ -63,38 +119,121 @@ body {
   margin: auto;
 }
 
-header {
-  background: rgba(255, 0, 0, 0.5);
-  height: 300px;
-  border: 1px solid #000;
-  padding: 40px;
-  margin: 20px;
+.logo {
+  padding: 0px;
+}
+.relaxr-logo-white {
+  height: 30px;
 }
 
-section {
-  background: rgba(255, 0, 0, 0.5);
-  height: 300px;
-  border: 1px solid #000;
-  padding: 40px;
-  margin: 20px;
+.main-menu {
+  padding: 0px;
 }
 
-aside {
-  background: rgba(255, 0, 0, 0.5);
-  height: 300px;
-  border: 1px solid #000;
-  padding: 40px;
-  margin: 20px;
+.nav-item {
+  color: gold;
+  font-size: 18px;
+  display: inline;
+  margin-left: 20px;
+  padding: 10px;
 }
 
-footer {
-  background: rgba(255, 0, 0, 0.5);
-  height: 300px;
-  border: 1px solid #000;
-  padding: 40px;
-  margin: 20px;
+.nav-item:hover {
+  background: gray;
 }
 
+.articles {
+  float: left;
+  width: 70%;
+  padding: 10px 20px 0px 0px;
+}
+
+.article-img {
+  width: 100%;
+}
+
+.firstcharacter {
+  float: left;
+  color: #1a334c;
+  font-size: 65px;
+  line-height: 45px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+.read-more {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.article {
+  border-bottom: 1px solid #1a334c;
+}
+
+.main-sidebar {
+  float: right;
+  width: 30%;
+}
+
+.categories-list {
+  padding: 10px;
+}
+
+.categories-item{
+  font-size: 14px;
+}
+
+.main-footer {
+  float: left;
+  width: 100%;
+}
+
+.main-footer-button {
+  background-color: gold;
+  padding: 20px 0px 20px 0px;
+}
+
+.sign-up-button {
+  color: white;
+  background-color: #1a334c;
+  box-shadow: 0 0px darkgray;
+}
+
+.main-footer-link {
+  color: gold;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.main-footer-section {
+  padding: 10px;
+}
+
+.main-footer-social {
+  padding: 10px;
+  width: 100%;
+  float: left;
+}
+
+.main-footer-link {
+  padding: 10px;
+  display: inline;
+}
+
+.main-twitter {
+  width: 50px;
+}
+
+.main-facebook {
+  width: 20px;
+}
+
+.main-footer-p {
+  color: white;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

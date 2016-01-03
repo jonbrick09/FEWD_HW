@@ -89,6 +89,14 @@ p {
   line-height: 170%;
 }
 
+li {
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  display: inline;
+  height: 52px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -150,14 +158,6 @@ button {
 .developers-nav {
   float: right;
   padding: 12px 10px 0px 0px;
-  height: 52px;
-}
-
-li {
-  color: white;
-  font-size: 18px;
-  padding: 5px;
-  display: inline;
   height: 52px;
 }
 
