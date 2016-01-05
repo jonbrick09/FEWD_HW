@@ -148,8 +148,18 @@ p {
   padding: 10px 20px 0px 0px;
 }
 
+.article {
+  margin-bottom: 10px;
+}
+
+.article-p {
+  padding: 10px 0;
+  line-height: 20px;
+}
+
 .article-img {
   width: 100%;
+  padding: 10px 0;
 }
 
 .firstcharacter {
@@ -162,11 +172,11 @@ p {
   padding-left: 3px;
 }
 
-
 .read-more {
   color: #1a334c;
   font-weight: bolder;
   font-size: 20px;
+  padding: 10px 0;
 }
 
 .article {
@@ -184,6 +194,10 @@ p {
 
 .categories-item{
   font-size: 14px;
+}
+
+.ad-image {
+  padding-top: 20px;
 }
 
 .main-footer {
