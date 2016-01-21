@@ -152,9 +152,20 @@ p {
   margin-bottom: 10px;
 }
 
-.article-p {
+.article-p-1 {
   padding: 10px 0;
   line-height: 20px;
+  display: none;
+}
+
+.article-p-2 {
+  padding: 10px 0;
+  line-height: 20px;
+  display: none;
+}
+
+.about-p {
+  display: none;
 }
 
 .article-img {
@@ -172,7 +183,42 @@ p {
   padding-left: 3px;
 }
 
-.read-more {
+.read-more-1 {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.read-more-2 {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.read-less-1 {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.read-less-2 {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.learn-more {
+  color: #1a334c;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.learn-less {
   color: #1a334c;
   font-weight: bolder;
   font-size: 20px;
@@ -247,6 +293,14 @@ p {
 
 .main-footer-p {
   color: white;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+display: none;
 }
 /******************************************
 /* ADDITIONAL STYLES

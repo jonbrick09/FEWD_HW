@@ -8,7 +8,8 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic,400italic,600,600italic,700italic' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	</head>
 	<body class="container clearfix">
 		<header class="main-header clearfix">
@@ -28,14 +29,16 @@
 				<div class="article clearfix">
 					<h2>How I implemented Relaxr in 2 weeks and changed my life.</h2>
 					<img class="article-img" src="images/blog_photo1.jpg" alt="Rowers"></img>
-					<p class="article-p"><span class="firstcharacter">T</span>he path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
-					<a class="alignright read-more" href="#">Read More ></a>
+					<p class="article-p-1"><span class="firstcharacter">T</span>he path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+					<a class="alignright read-more-1 show" href="#">Read More ></a>
+					<a class="alignright read-less-1 hide" href="#">Read Less ></a>
 				</div>
 				<div class="article clearfix">
 					<h2>I traveled across the globe thanks to Relaxr’s Excel automation.</h2>
 					<img class="article-img" src="images/blog_photo2.jpg" alt="Boats"></img>
-					<p class="aricle-p"><span class="firstcharacter">Y</span>our bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-					<a class="alignright read-more" href="#">Read More ></a>
+					<p class="article-p-2"><span class="firstcharacter">Y</span>our bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+					<a class="alignright read-more-2 show" href="#">Read More ></a>
+					<a class="alignright read-less-2 hide" href="#">Read Less ></a>
 				</div>
 			</div>
 			<aside class="main-sidebar clearfix">
@@ -52,7 +55,8 @@
 				<div class="about">
 					<h3 class="about-heading">About Relaxr</h3>
 					<p class="about-p">Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p>
-					<a class="read-more" href="#">Learn More</a>
+					<a class="learn-more show" href="#">Learn More</a>
+					<a class="learn-less hide" href="#">Learn Less</a>
 				</div>
 				<div class="ad-unit">
 					<a href="#"><img class="ad-image" src="images/ad-unit.png" alt"Advertisement"></a>
@@ -73,5 +77,7 @@
 			</div>
 		</footer>
 			<!-- #container -->
+
+    <script src="js/index.js"></script>
 	</body>
 </html>
