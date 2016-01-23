@@ -14,7 +14,10 @@ $(document).ready(function () {
     var city = $('.city-type').val();
 
 //PUT LOWER CASE TO UPPER CASE//
-    var city = city.toUpperCase()
+    var city = city.toUpperCase();
+
+//TRIM SPACES FOR CITY//
+    var city = city.trim();
 
 //Convert combinations to one city//
     if (city === "NEW YORK" || city === "NEW YORK CITY" || city === "NY") {
@@ -52,6 +55,12 @@ console.log('City: ' + city);
     else if (city === "SYDNEY") {
       $('body').addClass('sydney');
     }
+
+//CLEAR INPUT FIELD AFTER CLICK//
+    $('.city-type') .val('');
+
+//REPLACE CITIPIX WITH CITY//
+//HOW DOES THIS HAPPEN AGAIN?//
 
   //CLOSE CLICK FUNCTION//
   });
