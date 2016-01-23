@@ -21,11 +21,11 @@ $(document).ready(function() {
 // THIS IS SIMPLY APPENDING THE LI TO THE UL, NOT EFFECTING THE CONSOLE
 
     total += newVal;
-
-// THIS IS CHANGING THE VAR TOTAL
-
-      //
-      // console.log(total);
+// 
+// // THIS IS CHANGING THE VAR TOTAL
+//
+//       //
+//       console.log(total);
     formatCurrency(total);
 
     $('.total').text('$' + total);
