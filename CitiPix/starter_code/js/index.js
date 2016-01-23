@@ -7,6 +7,9 @@ $(document).ready(function () {
     //Prevent a form submission using the ```event.preventDefault()``` function//
     event.preventDefault()
 
+//CLEAR ANY BODy CLASSES//
+    $("body").removeClass();
+
 //city variable is what is typed into .city-type class//
     var city = $('.city-type').val();
 
@@ -55,13 +58,3 @@ console.log('City: ' + city);
 
 //CLOSE DOCUMENT//
 });
-
-  // THEIRRY"S code - WHY IS HIS WORKING AND NOT MINE?
-
-  // $("form").submit(function(event) {
-  //   event.preventDefault();
-  //
-  //   var city = $('.city-type').val();
-  //   console.log('City: ' + city);
-  //
-  //
