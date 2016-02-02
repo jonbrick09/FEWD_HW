@@ -19,9 +19,6 @@ $(document).ready(function () {
     //clear body of classes
     $("body").removeClass();
 
-    //select the val of this specific city-type
-    $(this).val();
-
     //Define city variable of the city-type value
     var city = $(this).val();
 
