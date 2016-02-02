@@ -10,40 +10,36 @@
 // Start with an array that contains strings of all the image paths.
 // You will also need a variable to keep track of which image is currently being shown to the user.
 
-var counter = 0;
+$(document).ready(function() {
+  var counter = 0;
 
-var images =[
-  'images/food1.jpg',
-  'images/food2.jpg',
-  'images/food3.jpg',
-  'images/food4.jpg',
-  'images/food6.jpg',
-  'images/food7.jpg',
-  'images/food8.jpg',
-];
+  var images = [
+    'images/food1.jpg',
+    'images/food2.jpg',
+    'images/food3.jpg',
+    'images/food4.jpg',
+    'images/food5.jpg',
+    'images/food6.jpg',
+    'images/food7.jpg',
+    'images/food8.jpg'
+  ];
 
-//clicks next, moving up the array, display image up array//
+  $('.next').click(function() {
+    if (counter < images.length - 1) {
+      counter = counter + 1;
+    }
 
-$('.next').click(function() {
-  counter = counter + 1; // counter += counter // counter ++ counter
+    $('.image').attr('src', images[counter]);
+  });
 
-  var currentImage = images[counter];
+  $('.back').click(function() {
+    counter = counter - 1;
 
-  $('.image').attr('src', currentImage) // OR   $('.image').attr('src', images[counter])
-  //when you click next the dom selects the next image in the array
+    $('.image').attr('src', images[counter]);
+  });
 
-  console.log(images[counter])
-});
+  $.each(images,function(index,foodImages) {
+    $('.image-list').append('<li>' + foodImages + '</li>');
+  });
 
-$('.back').click(function() {
-  counter = counter - 1; // counter += counter // counter ++ counter
-
-  var currentImage = images[counter];
-
-  $('.image').attr('src', currentImage) // OR   $('.image').attr('src', images[counter])
-  //when you click next the dom selects the next image in the array
-
-  console.log(images[counter])
-});
-
-//src becomes new images counter (old images[counter +1])//
+}); //end ready

@@ -1,14 +1,58 @@
-//Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded//
 $(document).ready(function () {
+  //Prevent a form submission using the ```event.preventDefault()``` function//
+  event.preventDefault()
 
-  //listen for click on .submit class//
-  $('.submit-btn').click(function(event) {
+  //Array of city locations
+  var locations = ["NYC", "SF", "LA", "ATX", "SYD"]
 
-    //Prevent a form submission using the ```event.preventDefault()``` function//
-    event.preventDefault()
+  //Use loop to show each location and append it to a list
+  function showCities() {
+    $.each(locations, function(index, value) {
+    $('.city-type').append("<option>" + value + "</option>")
+    });
+  }
 
-//CLEAR ANY BODy CLASSES//
+  showCities()
+
+//On change of city-type, enter that city in the 'city-input'//
+  $(".city-type").change(function () {
+    //clear body of classes
     $("body").removeClass();
+
+    //select the val of this specific city-type
+    $(this).val();
+
+    //Define city variable of the city-type value
+    var city = $(this).val();
+
+    //addClass to Body based on city
+    if (city === "ATX") {
+      $('body').addClass('austin');
+    }
+    else if (city === "NYC") {
+      $('body').addClass('nyc');
+    }
+    else if (city === "SF") {
+      $('body').addClass('sf');
+    }
+    else if (city === "LA") {
+      $('body').addClass('la');
+    }
+    else if (city === "SYD") {
+      $('body').addClass('sydney');
+    }
+
+    //Console Log
+    console.log('City: ' + city);
+
+  }); //end click of array
+
+}); //end ready
+
+/* THIS IS OLD CODE FROM THE PREVIOUS ASSINGMENT
+
+    // listen for click on .submit class
+    $('.submit-btn').click(function(event) {
 
 //city variable is what is typed into .city-type class//
     var city = $('.city-type').val();
@@ -36,34 +80,22 @@ $(document).ready(function () {
       city = "SYDNEY";
     }
 
-// THIS IS EFFECTING THE CONSOLE//
-console.log('City: ' + city);
+    //CHANGE BACKGROUND IMAGE BASED ON CITY//
+        if (city === "ATX") {
+          $('body').addClass('austin');
+        }
+        else if (city === "NYC") {
+          $('body').addClass('nyc');
+        }
+        else if (city === "SF") {
+          $('body').addClass('sf');
+        }
+        else if (city === "LA") {
+          $('body').addClass('la');
+        }
+        else if (city === "SYD") {
+          $('body').addClass('sydney');
+        }
+      });
 
-//CHANGE BACKGROUND IMAGE BASED ON CITY//
-    if (city === "AUSTIN") {
-      $('body').addClass('austin');
-    }
-    else if (city === "NYC") {
-      $('body').addClass('nyc');
-    }
-    else if (city === "SF") {
-      $('body').addClass('sf');
-    }
-    else if (city === "LA") {
-      $('body').addClass('la');
-    }
-    else if (city === "SYDNEY") {
-      $('body').addClass('sydney');
-    }
-
-//CLEAR INPUT FIELD AFTER CLICK//
-    $('.city-type') .val('');
-
-//REPLACE CITIPIX WITH CITY//
-//HOW DOES THIS HAPPEN AGAIN?//
-
-  //CLOSE CLICK FUNCTION//
-  });
-
-//CLOSE DOCUMENT//
-});
+END CODE FROM LAST ASSIGNMENT */
